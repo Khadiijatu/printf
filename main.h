@@ -25,7 +25,6 @@ int _printf(const char *format, ...);
 int (*get_op(char *s))(va_list);
 int print_char(va_list c);
 int print_str(va_list s);
-int print_percent(va_list args);
+int print_percent(va_list perc);
 int print_dec(va_list d);
-int print_int(va_list i);
 #endif
