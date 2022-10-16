@@ -10,7 +10,7 @@
  */
 int (*get_op(char *s))(va_list)
 {
-	op_t format[] = {
+	op_t specs[] = {
 		{"c", print_char},
 		{"s", print_str},
 		{"%", print_percent},
@@ -20,11 +20,11 @@ int (*get_op(char *s))(va_list)
 	};
 	int i = 0;
 
-	while (format[i].spec)
+	while (specs[i].spec)
 	{
-		if (*format[i].spec == *s)
+		if (*specs[i].spec == *s)
 			break;
 		i++;
 	}
-	return (format[i].f);
+	return (specs[i].f);
 }
