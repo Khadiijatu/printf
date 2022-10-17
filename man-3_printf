@@ -7,5 +7,6 @@ The conversion specifiers are:
 	s - writes a string to stdout
 	%% - prints the % sign
 	c - wries a single character to stdout
-	d, i - transforms a signed integer to a decimal representation
+	d or i - transforms a signed integer to a decimal representation
 	o - displays an unsigned integer using an octal representation
+	x or X - transforms an unsigned integer to a hexadecimal representation
