@@ -8,3 +8,4 @@ The conversion specifiers are:
 	%% - prints the % sign
 	c - wries a single character to stdout
 	d, i - transforms a signed integer to a decimal representation
+	o - displays an unsigned integer using an octal representation
