@@ -15,3 +15,4 @@ The conversion specifiers are:
 	e or E - transforms a floating-point number into a decimal exponent notation
 	a or A - displays a floating-point number using a hexadecimal exponent
 	g or G - displays a floating point number using decimal or decimal exponent notation
+	n - returns the number of characters written using this function. It writes the result to the value pointed by the argument
