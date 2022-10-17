@@ -1,5 +1,7 @@
 NAME
-	- prinf
+	- _prinf
+SYNOPSIS
+	int printf(const char *const format, ...);
 
 DESCRIPTION
 	writes the output under the control of a format that specifies how subsequent arguments are converted for output.
@@ -23,3 +25,15 @@ GENERAL FORM OF FORMAT SPECIFIERS:
 		'-' : the result of printf function is by default right justified. This value justifies the results to the left
 		'+' : adds a sign to the value of the results, even to a positive value
 		' ' : if there is no sign attached to a value, this will attach a space to the begining of the result
+		'#' : this leads to an alternative form of conversion being performed
+		'0' : this flag is used for integers and floating-point numbers to pad the values with zeros instead of space
+RETURN VALUE
+	- the number of the characters printed
+EXAMPLES
+	- To print a number:
+		int num = 66;
+		printf("%d\n", num);
+
+
+AUTHORS
+	-Khadijatu CISSE,
