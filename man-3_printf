@@ -17,3 +17,4 @@ The conversion specifiers are:
 	g or G - displays a floating point number using decimal or decimal exponent notation
 	n - returns the number of characters written using this function. It writes the result to the value pointed by the argument
 	p - a pointer that points to the implementation-defined character sequence
+GENERAL FORM OF FORMAT SPECIFIERS:
