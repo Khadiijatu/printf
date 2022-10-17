@@ -13,3 +13,4 @@ The conversion specifiers are:
 	u - displays an unsigned integer using a decimal representation
 	f or F - turns a floating-point number into a decimal representation
 	e or E - transforms a floating-point number into a decimal exponent notation
+	a or A - displays a floating-point number using a hexadecimal exponent
