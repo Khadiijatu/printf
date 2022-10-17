@@ -10,3 +10,4 @@ The conversion specifiers are:
 	d or i - transforms a signed integer to a decimal representation
 	o - displays an unsigned integer using an octal representation
 	x or X - transforms an unsigned integer to a hexadecimal representation
+	u - displays an unsigned integer using a decimal representation
