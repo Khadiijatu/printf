@@ -5,3 +5,4 @@ DESCRIPTION
 	writes the output under the control of a format that specifies how subsequent arguments are converted for output.
 The conversion specifiers are:
 	s - writes a string to stdout
+	%% - prints the % sign
