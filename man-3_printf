@@ -6,3 +6,4 @@ DESCRIPTION
 The conversion specifiers are:
 	s - writes a string to stdout
 	%% - prints the % sign
+	c - wries a single character to stdout
