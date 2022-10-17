@@ -18,4 +18,5 @@ The conversion specifiers are:
 	n - returns the number of characters written using this function. It writes the result to the value pointed by the argument
 	p - a pointer that points to the implementation-defined character sequence
 GENERAL FORM OF FORMAT SPECIFIERS:
-	& - the leading sign that denotes the begining of the specifier
+	% - the leading sign that denotes the begining of the specifier
+	flags are values that can modify the conversion behavious. Examples are:
