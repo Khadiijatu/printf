@@ -14,3 +14,4 @@ The conversion specifiers are:
 	f or F - turns a floating-point number into a decimal representation
 	e or E - transforms a floating-point number into a decimal exponent notation
 	a or A - displays a floating-point number using a hexadecimal exponent
+	g or G - displays a floating point number using decimal or decimal exponent notation
