@@ -22,3 +22,4 @@ GENERAL FORM OF FORMAT SPECIFIERS:
 	flags are values that can modify the conversion behavious. Examples are:
 		'-' : the result of printf function is by default right justified. This value justifies the results to the left
 		'+' : adds a sign to the value of the results, even to a positive value
+		' ' : if there is no sign attached to a value, this will attach a space to the begining of the result
