@@ -6,23 +6,23 @@
  *
  * Return: pointer to associated function
  */
-int (*get_op(char *s))(va_list)
+int (*get_op(char s))(va_list)
 {
 	op_t specs[] = {
 		{"c", print_char},
 		{"s", print_str},
 		{"%", print_percent},
 		{"d", print_dec},
-		{"i", print_int},
+		{"i", print_dec},
 		{NULL, NULL}
 	};
 	int i = 0;
 
 	while (specs[i].spec)
 	{
-		if (*specs[i].spec == *s)
-			break;
+		if (specs[i].spec == s)
+			return (specs[i].f);
 		i++;
 	}
-	return (specs[i].f);
+	return (0);
 }
