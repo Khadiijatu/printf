@@ -20,3 +20,4 @@ The conversion specifiers are:
 GENERAL FORM OF FORMAT SPECIFIERS:
 	% - the leading sign that denotes the begining of the specifier
 	flags are values that can modify the conversion behavious. Examples are:
+		'-' : the result of printf function is by default right justified. This value justifies the results to the left
