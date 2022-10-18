@@ -5,45 +5,46 @@
  *
  * Return: numbers of characters printed
  */
-int _printf(const char *format, ...)
+int _printf(char *format, ...)
 {
 	va_list args;
-	int i = 0;
+	int count;
+	char s0, s1, s[3];
 
 	if (format == NULL)
 		return (-1);
+	s0 = format[0];
+	s1 = format[1];
+	s[2] = '\0'; 
 	va_start(args, format);
-	while (*format)
+	while (s0)
 	{
-		if (*format != '%')
+		if (s0 != '%')
 		{
-			_putchar(*format);
-			i++;
+			count += _putchar(s0);
 			format++;
-			continue;
 		}
-		format++;
-		if (*format == '\0')
-			return (-1);
-		if (*format != 'c' && *format != 's' && *format != '%'
-		     && *format != 'd' && *format != 'i')
+		else
 		{
-			_putchar('%');
-			_putchar(*format);
-			i += 2;
-			format++;
-			continue;
+			if (get_op(format))
+			{
+				s[0] = '%';
+				s[1] = s1;
+				count += (get_op(format))(s, args);
+			}
+			else if (s1)
+			{
+				count += _putchar('%');
+				count += _putchar(s1);
+			}
+			else
+			{
+				count += _putchar('%');
+				break;
+			}
+			format += 2;
 		}
-		if (*format == '%')
-		{
-			_putchar(*format);
-			i++;
-			format++;
-			continue;
-		}
-			i += (get_op(format))(args);
-		format++;
 	}
 	va_end(args);
-	return (i);
+	return (count);
 }

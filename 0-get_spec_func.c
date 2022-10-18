@@ -6,7 +6,7 @@
  *
  * Return: pointer to associated function
  */
-int (*get_op(const char *s))(va_list)
+int (*get_op(char *format))(char *format, va_list)
 {
 	op_t specs[] = {
 		{"%c", print_char},
@@ -18,12 +18,12 @@ int (*get_op(const char *s))(va_list)
 	};
 	int i;
 
-	if (!s[1] || s[1] == ' ')
+	if (!format[1] || format[1] == ' ')
 		return (NULL);
 	i = 0;
 	while (specs[i].spec)
 	{
-		if (specs[i].spec[1] == s[1])
+		if (specs[i].spec[1] == format[1])
 			return (specs[i].f);
 		i++;
 	}
