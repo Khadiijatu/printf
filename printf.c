@@ -41,7 +41,7 @@ int _printf(const char *format, ...)
 			format++;
 			continue;
 		}
-			i += (*get_op(*format))(args);
+			i += (get_op(format))(args);
 		format++;
 	}
 	va_end(args);
