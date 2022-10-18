@@ -6,7 +6,7 @@
  *
  * Return: pointer to associated function
  */
-int (*get_op(char *format))(char *format, va_list)
+int (*get_op(const char *format))(char *format, va_list)
 {
 	op_t specs[] = {
 		{"%c", print_char},

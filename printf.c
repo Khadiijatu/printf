@@ -5,7 +5,7 @@
  *
  * Return: numbers of characters printed
  */
-int _printf(char *format, ...)
+int _printf(const char *format, ...)
 {
 	va_list args;
 	int count;

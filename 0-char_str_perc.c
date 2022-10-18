@@ -23,9 +23,9 @@ int print_char(char *format, va_list c)
  */
 int print_str(char *format, va_list s)
 {
-	(void)format;
 	int i;
 	char *str;
+	(void)format;
 
 	str = va_arg(s, char *);
 	i = 0;
