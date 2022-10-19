@@ -7,17 +7,20 @@
  */
 int print_rev(va_list r)
 {
-	char *tmp;
+	char *str;
 	int i, n;
-	int count;
 
-	count = 0;
-	tmp = va_arg(r, char *);
-
-	for (i = 0; tmp[i]; i++)
-		count++;
-	for (n = count - 1; n >= 0; n--)
-		_putchar(tmp[n]);
-
-	return (0);
+	str = va_arg(r, char *);
+	if (str == NULL)
+		str = "(null)";
+	i = 0;
+	while (str[i])
+		i++;
+	n = 0;
+	for (i = i - 1; i >= 0; i--)
+	{
+		_putchar(str[i]);
+		n++;
+	}
+	return (n);
 }
