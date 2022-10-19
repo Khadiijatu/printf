@@ -15,12 +15,12 @@
 typedef struct specifiers
 {
 	char *spec;
-	int (*f)(va_list);
+	int (*f)();
 } op_t;
 
 int _putchar(char c);
 int _printf(const char *format, ...);
-int (*get_op(const char *format))(va_list);
+int get_op(const char *format, op_t *specs, va_list args);
 int print_char(va_list c);
 int print_str(va_list s);
 int print_percent(va_list perc);
