@@ -25,4 +25,5 @@ int print_char(va_list c);
 int print_str(va_list s);
 int print_percent(va_list perc);
 int print_dec(va_list d);
+int print_rev(va_list r);
 #endif
